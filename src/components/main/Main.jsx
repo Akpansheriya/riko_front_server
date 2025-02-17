@@ -43,7 +43,6 @@ import Setting from "../setting/Setting";
 import ListenerProfileView from "../listener-management/listener-profile-view/ListenerProfileView";
 import Docs from "../listener-management/docs/Docs";
 
-
 const Main = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const toggleSidebar = () => {
@@ -83,11 +82,11 @@ const Main = () => {
               path="/listener-management/listeners-profile-approvals"
               element={<ProfileApproval />}
             />
- <Route
+            <Route
               path="/listener-management/listeners-profile-approvals-docs"
               element={<Docs />}
             />
-            <Route
+            {/* <Route
               path="/payment-management/payment-list"
               element={<PaymentList />}
             />
@@ -118,7 +117,7 @@ const Main = () => {
               path="/recharge-charges/charge-manage"
               element={<ChargeManagement />}
             />
-             <Route
+            <Route
               path="/recharge-charges/penalty-manage"
               element={<PenaltyManage />}
             />
@@ -162,8 +161,11 @@ const Main = () => {
             <Route path="/add-notification" element={<AddNotification />} />
 
             <Route path="/status" element={<Status />} />
-            <Route path="/setting" element={<Setting />} />
-            <Route path="/listener-management/profile-view" element={<ListenerProfileView />} />
+            <Route path="/setting" element={<Setting />} /> */}
+            <Route
+              path="/listener-management/profile-view"
+              element={<ListenerProfileView />}
+            />
           </Routes>
         </div>
       </div>
